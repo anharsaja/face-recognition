@@ -1,4 +1,4 @@
-import cv2
+import cv2, time
 
 camera = 0
 
@@ -19,4 +19,4 @@ while True:
         break
 
 video.release()
-cv2.destroyAllWindows() 
+cv2.destroyAllWindows()

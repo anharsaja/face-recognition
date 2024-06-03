@@ -19,8 +19,8 @@ while True:
         id, conf = recognizer.predict(abu[y:y+h, x:x+w])
         if id == 1:
             id = 'Anhar'
-        elif id == 2 == 2:
-            id = 'Danu'
+        else:
+            id = 'Bukan Anhar'
         cv2.putText(frame,str(id), (x+30, y-10), cv2.FONT_HERSHEY_DUPLEX, 1, (0,255,0))
     cv2.imshow("Face Recognition", frame)
     key = cv2.waitKey(1)
